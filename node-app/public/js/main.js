@@ -1,4 +1,4 @@
-var app = angular.module('aprovaapp', ['ui.router', 'angular-loading-bar', 'angulartics', 'angulartics.google.analytics']);
+var app = angular.module('aprovaapp', ['ui.router', 'ngSanitize', 'angular-loading-bar', 'angulartics', 'angulartics.google.analytics']);
 
 app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$analyticsProvider',
 	function($stateProvider, $urlRouterProvider, $locationProvider, $analyticsProvider) {
