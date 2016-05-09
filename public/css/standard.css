@@ -8,6 +8,22 @@
 	.barra{
 		background-color:#262A83 !important;
 		color: #FFFFFF;
+		border-bottom: 5px;
+		border-color: #EDF1F2;
+	}
+	.barra2{
+		padding-top: 20px;
+		height: 5px;
+		width: 100%;
+	    background-color: #EDF1F2;
+	}
+	.barra3{
+		width: 100%;
+		text-align: center;
+	}
+	.barra.container{
+		border-bottom: 5px;
+		border-color: #EDF1F2;
 	}
 
 	.barra button{
