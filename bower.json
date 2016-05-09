@@ -1,0 +1,27 @@
+{
+  "name": "gamateam1",
+  "homepage": "https://github.com/giovannand/gamateam1",
+  "authors": [
+    "Kelvne Pechim <kelvne.pechim@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angulartics": "^1.0.3",
+    "angulartics-google-analytics": "^0.1.4",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3",
+    "angular-ui-router": "^0.2.18",
+    "angular-loading-bar": "^0.9.0"
+  }
+}
