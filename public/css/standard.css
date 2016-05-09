@@ -90,6 +90,14 @@
 		width:550px;
 		height: 250px;
 	}
+	.artigo{
+		width: 70%;
+		text-align:justify;
+	}
+	.artigo img{
+		width:650px;
+		height: 300px;
+	}
 	.texto{
 		padding-bottom: 25px;
 	}
