@@ -1,13 +1,12 @@
 var app = angular.module('aprovaapp', ['ui.router', 'angular-loading-bar', 'angulartics', 'angulartics.google.analytics']);
 
 app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
+	$scope.userData = { age: "", email: "", location: "" };
+
 	$scope.lead = function () {
-		$http.post('save-lead.php', {
-			email: $scope.email,
-			age: $scope.age,
-			location: $scope.location
-		}).success(function(data){
-			$('#succesModal').modal('show');
+		$http.post('gamateam1/save-lead.php', $scope.userData).success(function(data){
+			$('#cadastro').modal('hide');
+			$('#successModal').modal('show');
 		}).error(function(data){});
 	}
 }]);

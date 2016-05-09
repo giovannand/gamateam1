@@ -1,7 +1,9 @@
 <?php 
-	$email = $_POST['email'];
-	$age = $_POST['age'];
-	$location = $_POST['location'];
+	$post = json_decode(file_get_contents("php://input"));
+
+	$email = $post->email;
+	$age = $post->age;
+	$location = $post->location;
 
 	$jsonFile = json_decode(file_get_contents('leads.json'), true);
 
