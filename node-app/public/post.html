@@ -4,25 +4,10 @@
 		  <div class="row">
 			<div class="col-md-12">
 				<div class="artigo texto short-div">
-				  <img src="images/img_post02.png" class="img-responsive" alt="Responsive image">
-				  <h2>Os 3 melhores professores de matemática do Youtube</h2>
+				  <img ng-src="images/{{post.img}}" class="img-responsive" alt="Responsive image">
+				  <h2>{{post.title}}</h2>
 
-				  <p>Não é novidade para ninguém que a <b>matemática é uma das matérias mais temidas</b> pela grande maioria dos alunos. De acordo o Ibope, 77% dos brasileiros não dominam sequer habilidades matemáticas básicas utilizadas no dia a dia.</p>
-
-				  <p>Se esse é o seu caso, não entre em pânico! Existem vários professores de matemática fazendo vídeos no youtube com diversas abordagens diferentes, basta descobrir <b>qual é o método que melhor funciona para você.</b> </p>
-
-				  <h3><a href="https://www.youtube.com/user/professorferretto/featured">Professor Farretto</a></h3>
-				  <p>Com mais de 370 mil inscritos, o canal do Professor Ferretto no Youtube é totalmente voltado para explicar e resolver questões matemáticas no estilo das <b>elaboradas pelo MEC para o ENEM</b>. Ferretto também faz vídeo aulas de matérias comuns em cursos universitários da área de exatas, como Cálculo 1, que deixa até os amantes da matemática de cabelo em pé. </p>
-
-				  <h3><a href="https://www.youtube.com/user/matematicario">Matemática Rio com Prof. Rafael Procópio</a></h3>
-				  <p>Com mais de 370 mil inscritos, o canal do Professor Ferretto no Youtube é totalmente voltado para explicar e resolver questões matemáticas no estilo das <b>elaboradas pelo MEC para o ENEM</b>. Ferretto também faz vídeo aulas de matérias comuns em cursos universitários da área de exatas, como Cálculo 1, que deixa até os amantes da matemática de cabelo em pé. </p>
-
-				  <h3><a href="https://www.youtube.com/user/GuiMRosa">Matemática em Exercícios com o professor Gui</a></h3>
-				  <p>O professor Gui também posta vídeo aulas ensinando desde a matemática básica a mais complexa. O seu diferencial é o bom humor e os vídeos mais curtos e objetivos, mas o que faz dele um <b>professor de destaque são as paródias de músicas que te ajudarão a decorar qualquer matéria, como essa em que usa a música Let it Be, dos Beatles, para falar de razões trigonométricas.</b> <a href="https://www.youtube.com/watch?v=ShonRNx2vf4">Confira!</a> </p>
-
-				  <p><b>Dica amiga:</b> como matemática é uma matéria cumulativa, ou seja, o que você aprende hoje vai ser fundamental para entender coisas mais complexas no futuro, procure pelo seu professor e peça para que ele te ajuda a descobrir exatamente qual foi a primeira matéria que você não aprendeu direito no passado, é provável que a sua dificuldade tenha começado exatamente naquele momento.</p>
-
-
+				  <div ng-bind-html="post.body"></div>
 				</div>
 
 				<!-- <div class="artigo texto short-div">

@@ -40,7 +40,7 @@
 						</div>
 						<div class="form-group">
 							<input ng-model="userData.email" class="form-control" type="text" placeholder="Email">
-							<a class="button" href="index.html"><span class="glyphicon glyphicon-envelope white" ></span></a>
+							<a class="button" ng-click="lead()" href="#"><span class="glyphicon glyphicon-envelope white" ></span></a>
 						</div>
 					</form>
 				</div><!--/.navbar-collapse -->
@@ -64,7 +64,7 @@
 				<div class=" col-md-3">
 					<nav id="menu">
 						<ul>
-						  <li role="" class="active"><a ui-sref="incial"> <span style="color:#CCCCCC"  class="glyphicon glyphicon-home" aria-hidden="true"></span>   Home</a></li>
+						  <li role="" class="active"><a ui-sref="inicial"> <span style="color:#CCCCCC"  class="glyphicon glyphicon-home" aria-hidden="true"></span>   Home</a></li>
 						  <li role=""><a href="https://www.facebook.com/Aprova-no-Enem-825167387587727/"> <span style="color:#CCCCCC"  class="glyphicon glyphicon-envelope" aria-hidden="true"></span>   Contato</a></li>
 						</ul>
 					</nav>
@@ -129,108 +129,7 @@
 		</div>
 		<!-- ------------------ /.carousel -->
 		<div ui-view>
-			<div class="container" ng-controller="PostsCtrl">
-			  <!-- Example row-fluid of columns -->
-			  <div class="row">
-				<div class="col-md-6">
-					<div ng-repeat="post in posts" class="artigos texto short-div">
-					  <img ng-src="images/{{post.img}}" class="img-responsive" alt="Responsive image">
-					  <h2>{{post.title}}</h2>
-					  {{post.body}}
-					  <p ng-bind-html="post.body"> </p>
-					  <p><a class="btn btn-primary" ui-sref="post({postUrl: post.url})" role="button">Leia mais &raquo;</a></p>
-					</div>
 
-
-					<div class="artigos texto short-div">
-					  <img src="images/img_post02.png" class="img-responsive" alt="Responsive image">
-					  <h2>Os 3 melhores professores de matemática do Youtube</h2>
-					  <p>Quer sabem quais são os 3 melhores professosres de matemática do Youtube? Aqui você encontra as melhores dicas para mandar super bem em <b>matemática no ENEM</b></p>
-					  <p><a class="btn btn-primary" href="artigo2.html" role="button">Leia mais&raquo;</a></p>
-					</div>
-				</div>
-				<div class="col-md-5 col-md-offset-1">
-					<div class="artigos destaque short-div">
-					  <br />
-					  <form class="form" id="formulario-cadastro">
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2">
-					  			<div class="form-group">
-					  				<h2>Assine nosso blog</h2>
-					  			</div>
-					  		</div>
-						</div>
-					  	<div class="row">
-					  		<div class="col-md-8 col-md-offset-2">
-					  			<div class="form-group">
-					  				<input ng-model="userData.email" class="form-control" type="text" placeholder="Email">
-					  			</div>
-					  		</div>
-					  	</div>
-					  	<div class="row">
-					  		<div class="col-md-4 col-md-offset-2">
-					  			<div class="form-group">
-					  				<input ng-model="userData.age" class="form-control input-cadastro" type="text" placeholder="Idade">
-					  			</div>
-					  		</div>
-					  		<div class="col-md-4">
-					  			<div class="form-group">
-					  				<input ng-model="userData.location" class="form-control input-cadastro" type="text" placeholder="De onde você é?">
-					  			</div>
-					  		</div>
-					  	</div>
-						<div class="row">
-					  		<div class="col-md-4 col-md-offset-2">
-					  			<div class="form-group">
-					  			</div>
-					  		</div>
-					  		<div class="col-md-4">
-					  			<div class="form-group">
-									<button ng-click="lead()" class="btn btn-default">Cadastre-se!</button>
-					  			</div>
-					  		</div>
-					  	</div>
-
-					  </form>
-						<!-- <div class="input-group">
-						  <input type="text" placeholder="e-mail"  class="form-control" aria-label="...">
-						  <div class="input-group-btn">
-							  <button type="button" class="btn btn-default "><span class="glyphicon glyphicon-envelope white" aria-hidden="true"></span></button>
-						  </div>
-						</div> -->
-					</div>
-					<br/><br/><br/>
-					<div class="artigos short-div">
-						<h2> <button type="button" class="btn btn-primary "><span class="glyphicon glyphicon-pencil white" aria-hidden="true"></span></button> Redações</h2>
-						<ul class="listas">
-							<li type= disc><b>Veja como fazer redação nota 1000</b>
-								<!-- <ul>
-									<li><a>10 dicas de como aprimorar a escrita</a>
-									<li><a>3 formas de não fugir do tema</a>
-									<li><a>Como saber onde estamos errando</a>
-								</ul> -->
-							<li type=square><b>Questões multipla-escolha:Como acertar?</b></b>
-							<li type=square><b>10 formas de manter a concentração</b>
-						</ul>
-					</div>
-					<br/><br/><br/>
-					<div class="artigos short-div">
-						<h2> <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-th-list white" aria-hidden="true"></span></button> Categorias</h2>
-						<br/>
-						<div class="list-group">
-						  <a class="list-group-item">Bem estar do aluno</a>
-						  <a class="list-group-item">Educação brasileira</a>
-						  <a class="list-group-item">Metodologia de ensino</a>
-						</div>
-					</div>
-
-				</div>
-			  </div>
-			  <br/>
-		  <hr>
-
-
-		</div> <!-- /container -->
 		</div>
 		<div class="footer1">
 			<div class="container">

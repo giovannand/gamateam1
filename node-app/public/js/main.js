@@ -6,11 +6,13 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$analy
 		$urlRouterProvider.otherwise('/');
 
 		$stateProvider.state('inicial', {
-			url: '/'
+			url: '/',
+			templateUrl: '/home.html',
+			controller: 'PostsCtrl'
 		}).state('post', {
 			url: '/:postUrl',
 			templateUrl: '/post.html',
-			controller: 'postsCtrl'
+			controller: 'PostsCtrl'
 		});
 	}
 ]);
@@ -26,13 +28,24 @@ app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
 	}
 }]);
 
-app.controller('PostsCtrl', ['$scope', '$http', function($scope, $http) {
+app.controller('PostsCtrl', ['$scope', '$http', '$stateParams', function($scope, $http, $stateParams) {
 	$scope.posts = [];
+	$scope.post = {};
 
 	var refreshPosts = function () {
-		$http.post('/api/posts/list', { page: 1, limit: 2 }).success(function(data) {
+		$http.post('/api/posts/list', { page: 1, limit: 3 }).success(function(data) {
 			$scope.posts = data;
 		}).error(function(data){});
+	}
+
+	var showPost = function(url) {
+		$http.post('/api/posts/show', { url: url }).success(function(data) {
+			$scope.post = data;
+		}).error(function(data){});
+	}
+
+	if ($stateParams.postUrl) {
+		showPost($stateParams.postUrl);
 	}
 
 	refreshPosts();
