@@ -1,125 +1,162 @@
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  padding-top: 56px;
-  padding-bottom: 20px;
-  background-color: #FFFAFA;
-}
+	/* Move down content because we have a fixed navbar that is 50px tall */
+	body {
+	  padding-top: 56px;
+	  padding-bottom: 0px;
+	  background-color: #FFFAFA;
+	}
 
-.barra{
-	background-color:#FF0000;
-	color: #FFFFFF;
-	height: 9%;
+	.barra{
+		background-color:#262A83 !important;
+		color: #FFFFFF;
+	}
 
-}
+	.barra button{
+		background-color:#FFFAFA;
+		border-color: #FDF5E6;
+		color: #696969;
 
-.barra button{
-	background-color:#FFFAFA;
-	border-color: #FDF5E6;
-	color: #696969;
+	}
 
-}
+	.barra img{
+	}
 
-.barra a{
-	color:#FFFAFA;
-}
+	.barra a{
+		color:#FFFAFA;
+	}
 
-.barra1{
-	padding-top: 15px;
-	height: 140px;
-	width: 100%;
-    background-color: #FFFFFF;
-	/*margin-top:50px;*/
-}
-.contador{
-	background-color: #ffffff;
-	text-align: center;
-	font-size: 20px;
-}
+	.barra1{
+		padding-top: 15px;
+		height: 140px;
+		width: 100%;
+	    background-color: #FFFFFF;
+		/*margin-top:50px;*/
+	}
+	.contador{
+		background-color: #FFFFFF;
+		text-align: center;
+		font-size: 15px;
+		color: #ffffff;
+		font-family: "Times New Roman", Georgia, Serif;
+	}
 
-.container{
-}
-#menu ul {
-	padding:25px 0px 0px 0px;
-	margin:0px;
-	list-style:none;
-}
-#menu ul li { display: inline; }
+	.contador1{
+		background-color: #ff66ff;
+		margin-left: 40px;
+		margin-right:-40px;
+		height:120px;
+		width: 150px;
+	}
 
-#menu ul li a {
-	padding: 2px 10px;
-	display: inline-block;
+	.container{
+	}
+	#menu ul {
+		padding:25px 0px 0px 0px;
+		margin:0px;
+		list-style:none;
+	}
+	#menu ul li { display: inline; }
 
-	/* visual do link */
-	color: #333;
-	text-decoration: none;
-	border-left:3px solid #EDEDED;
-	font-size: 16px;
-}
-#menu ul li a:hover {
-	color: #4169E1;
-}
-.white, .white a {
-  color: #fff;
-}
-.artigos{
-	background-color: #FFFFFF;
-	border-color: #228B22;
-	padding: 2px;
-}
-.artigos button{
-	background-color: #4169E1;
+	#menu ul li a {
+		padding: 2px 10px;
+		display: inline-block;
 
-}
-.artigos img{
-	width:550px;
-	height: 250px;
-}
-.texto{
-	padding-bottom: 25px;
-}
-.texto p{
-	margin-bottom: 25px;
-}
+		/* visual do link */
+		color: #333;
+		text-decoration: none;
+		border-left:3px solid #EDEDED;
+		font-size: 16px;
+	}
+	#menu ul li a:hover {
+		color: #4169E1;
+	}
+	.white, .white a {
+	  color: #fff;
+	}
+	.destaque{
+		background-color: #0075AC !important;
+		color: #FFFFFF;
+	}
 
-.listas{
-	line-height : 40px;
-}
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+	.artigos{
+		background-color: #FFFFFF;
+		border-color: #228B22;
+		padding: 2px;
+	}
+	.artigos button{
+		background-color: #4169E1;
 
-/* Carousel base class */
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
+	}
+	.artigos img{
+		width:550px;
+		height: 250px;
+	}
+	.texto{
+		padding-bottom: 25px;
+	}
+	.texto p{
+		margin-bottom: 25px;
+	}
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-}
+	.listas{
+		line-height : 40px;
+	}
 
-/*--------------------------------------------------------*/
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-@media (max-width: @screen-xs-max) { ... }
+	.footer1{
+		background-color:#262A83 !important;
+		height:100px;
+		padding-top: 15px;
+		color: white;
+	}
+	.footer1 p{
+		color:#FFFFFF;
+		text-align: center;
+	}
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
+	.footer1 a{
+		height: 30px;
+		text-align: center;
+	}
+	/* CUSTOMIZE THE CAROUSEL
+	-------------------------------------------------- */
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+	/* Carousel base class */
+	.carousel {
+	  height: 500px;
+	  margin-bottom: 60px;
+	}
+	/* Since positioning the image, we need to help out the caption */
+	.carousel-caption {
+	  z-index: 10;
+	  text-align: left;
+	  width: 20%;
+	  left: 15%;
+	  top: 22%;
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+	}
+
+	/* Declare heights because of positioning of img element */
+	.carousel .item {
+	  height: 500px;
+	  background-color: #777;
+	}
+	.carousel-inner > .item > img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  min-width: 100%;
+	  height: 500px;
+	}
+
+	/*--------------------------------------------------------*/
+	/* Extra small devices (phones, less than 768px) */
+	/* No media query since this is the default in Bootstrap */
+	@media (max-width: @screen-xs-max) { ... }
+
+	/* Small devices (tablets, 768px and up) */
+	@media (min-width: @screen-sm-min) { ... }
+
+	/* Medium devices (desktops, 992px and up) */
+	@media (min-width: @screen-md-min) { ... }
+
+	/* Large devices (large desktops, 1200px and up) */
+	@media (min-width: @screen-lg-min) { ... }

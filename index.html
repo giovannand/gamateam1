@@ -13,16 +13,15 @@
 				display: none !important;
 			}
 		</style>
-		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" type="text/css" href="bower_components/angular-loading-bar/build/loading-bar.min.css" media="all">
+		<link rel="stylesheet" type="text/css" href="file:///var/www/gamateam1/bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="file:///var/www/gamateam1/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="file:///var/www/gamateam1/bower_components/angular-loading-bar/build/loading-bar.min.css" media="all">
 
-		<link rel="stylesheet" type="text/css" href="public/css/standard.css">
+		<link rel="stylesheet" type="text/css" href="file:///var/www/gamateam1/public/css/standard.css">
 	</head>
 
 	<body ng-app="aprovaapp" ng-controller="MainCtrl" ng-cloak>
-		
-		<nav class="barra navbar navbar-inverse navbar-fixed-top">
+		<nav class="barra navbar navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,7 +32,7 @@
 					</button>
 
 				</div>
-			
+
 				<div id="navbar" class="navbar-collapse collapse">
 					<form class="navbar-form navbar-right">
 						<div class="form-group">
@@ -45,16 +44,17 @@
 						<div class="form-group">
 							<input type="password" placeholder="Password" class="form-control">
 						</div>
-						<button id="loging" type="submit" class="btn btn-success">Sign in</button>
+						<button id="loging" type="submit" class="btn btn-default">Sign in</button>
 					</form>
 				</div><!--/.navbar-collapse -->
 			</div>
 		</nav>
-
 		<nav class="barra1">
 			<div class="row-fluid">
-				<div class=" col-md-4">
-					<h3 class="text-muted">Logotipo<br/>XXXX</h3>
+				<div class="col-md-4" >
+					<div class="contador1">
+					  <img class="first-slide" src="file:///var/www/gamateam1/public/images/logo4.png" alt="First slide">
+					</div>
 				</div>
 				<div class=" col-md-5"></div>
 				<div class=" col-md-3">
@@ -69,9 +69,9 @@
 			</div>
 		</nav>
 		<div >
-			<div  class="contador">
-				<p><b> FALTAM 105 DIAS PARA O ENEM. VOCÊ JÁ ESTUDOU O SUFICIENTE?</b></p>
-			</div>
+			<!-- <div  class="contador">
+				<p><b> FALTAM 180 DIAS PARA O ENEM. VOCÊ JÁ ESTUDOU O SUFICIENTE?</b></p>
+			</div> -->
 		</div>
 
 		<!-- Carousel
@@ -80,38 +80,38 @@
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="1" ></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		  </ol>
 		  <div class="carousel-inner" role="listbox">
 			<div class="item active">
-			  <img class="first-slide" src="public/images/1.png" alt="First slide">
+			  <img class="first-slide" src="file:///var/www/gamateam1/public/images/banner_topo_1_02.png" alt="First slide">
 			  <div class="container">
 				<div class="carousel-caption">
-				  <h1></h1>
-				  <p></p>
-				  <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
+				  <h1>Seja Aprovado!</h1>
+  				  <p>Você está querendo ser aprovado no ENEM e procura pelas <b>melhores dicas</b> sobre o tema na internet? Nós podemos te ajudar!</p>
+  				  <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
 				</div>
 			  </div>
 			</div>
 			<div class="item">
-			  <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+			  <img class="second-slide" src="file:///var/www/gamateam1/public/images/banner_topo_2.png" alt="Second slide">
 			  <div class="container">
 				<div class="carousel-caption">
-				  <h1>Another example headline.</h1>
-				  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-				  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+				  <h1>Seja Aprovado!</h1>
+				  <p>Você está querendo ser aprovado no ENEM e procura pelas <b>melhores dicas</b> sobre o tema na internet? Nós podemos te ajudar!</p>
+				  <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
 				</div>
 			  </div>
 			</div>
 			<div class="item">
-			  <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+			  <img class="third-slide" src="file:///var/www/gamateam1/public/images/banner_topo_3.png" alt="Third slide">
 			  <div class="container">
 				<div class="carousel-caption">
-				  <h1>One more for good measure.</h1>
-				  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-				  <p><a class="btn btn-lg btn-primary" href="#" role="button">Brow-fluidse gallery</a></p>
-				</div>
+					<h1>Seja Aprovado!</h1>
+    				<p>Você está querendo ser aprovado no ENEM e procura pelas <b>melhores dicas</b> sobre o tema na internet? Nós podemos te ajudar!</p>
+    				<p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
+  				</div>
 			  </div>
 			</div>
 		  </div>
@@ -131,32 +131,66 @@
 		  <div class="row">
 			<div class="col-md-6">
 				<div class="artigos texto short-div">
-				  <img src="public/images/3.png" class="img-responsive" alt="Responsive image">
+				  <img src="file:///var/www/gamateam1/public/images/img_post01.png" class="img-responsive" alt="Responsive image">
 				  <h2>Saiba como ser aprovado no ENEM</h2>
 				  <p>Você está querendo ser aprovado no ENEM e procura pelas <b>melhores dicas</b> sobre o tema na internet? Nós podemos te ajudar!</p>
 				  <p><a class="btn btn-primary" href="#" role="button">Leia mais &raquo;</a></p>
 				</div>
 				<div class="artigos texto short-div">
-				  <img src="public/images/3.png" class="img-responsive" alt="Responsive image">
+				  <img src="file:///var/www/gamateam1/public/images/img_post02.png" class="img-responsive" alt="Responsive image">
 				  <h2>Heading</h2>
 				  <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
 				  <p><a class="btn btn-primary" href="#" role="button">Leia mais&raquo;</a></p>
 				</div>
 			</div>
 			<div class="col-md-5 col-md-offset-1">
-				<div class="artigos short-div">
-					  <h2>Assine nosso blog</h2>
+				<div class="artigos destaque short-div">
 				  <br />
-					<div class="input-group">
+				  <form class="form" id="formulario-cadastro">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+				  			<div class="form-group">
+				  				<h2>Assine nosso blog</h2>
+				  			</div>
+				  		</div>
+					</div>
+				  	<div class="row">
+				  		<div class="col-md-8 col-md-offset-2">
+				  			<div class="form-group">
+				  				<input ng-model="userData.email" class="form-control" type="text" placeholder="Email">
+				  			</div>
+				  		</div>
+				  	</div>
+				  	<div class="row">
+				  		<div class="col-md-8 col-md-offset-2">
+				  			<div class="form-group">
+				  				<input ng-model="userData.age" class="form-control input-cadastro" type="text" placeholder="Idade">
+				  			</div>
+				  		</div>
+				  	</div>
+					<div class="row">
+				  		<div class="col-md-4 col-md-offset-2">
+				  			<div class="form-group">
+				  			</div>
+				  		</div>
+				  		<div class="col-md-4">
+				  			<div class="form-group">
+								<button ng-click="lead()" class="btn btn-default">Cadastre-se!</button>
+				  			</div>
+				  		</div>
+				  	</div>
+
+				  </form>
+					<!-- <div class="input-group">
 					  <input type="text" placeholder="e-mail"  class="form-control" aria-label="...">
 					  <div class="input-group-btn">
 						  <button type="button" class="btn btn-default "><span class="glyphicon glyphicon-envelope white" aria-hidden="true"></span></button>
 					  </div>
-					</div>
+					</div> -->
 				</div>
 				<br/><br/><br/>
 				<div class="artigos short-div">
-					<h2> <button type="button" class="btn btn-default "><span class="glyphicon glyphicon-pencil white" aria-hidden="true"></span></button> Redações</h2>
+					<h2> <button type="button" class="btn btn-primary "><span class="glyphicon glyphicon-pencil white" aria-hidden="true"></span></button> Redações</h2>
 					<ul class="listas">
 						<li type= disc><b>Veja como fazer redação nota 1000</b>
 							<ul>
@@ -170,7 +204,7 @@
 				</div>
 				<br/><br/><br/>
 				<div class="artigos short-div">
-					<h2> <button type="button" class="btn btn-default "><span class="glyphicon glyphicon-th-list white" aria-hidden="true"></span></button> Categorias</h2>
+					<h2> <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-th-list white" aria-hidden="true"></span></button> Categorias</h2>
 					<br/>
 					<div class="list-group">
 					  <a href="#" class="list-group-item">Bem estar do aluno</a>
@@ -185,11 +219,37 @@
 
 		  <hr>
 
-		  <footer>
-			<p>AprovaEnem ® 2016</p>
-		  </footer>
+
 		</div> <!-- /container -->
-		
+		<div class="footer1">
+			<div class="container">
+			  <!-- Example row-fluid of columns -->
+			  <div class="row">
+				<div class="col-md-4 ">
+					<span class="glyphicon glyphicon-envelope white" aria-hidden="true"></span>
+					<span> </span>
+					<span>contato@aprovenoenem.com.br</span>
+				</div>
+				<div class="col-md-4 col-md-offset-4">
+					<a class="navbar-brand" style="color:#FFFAFA" href="https://www.facebook.com/Aprova-no-Enem-825167387587727/"><img src="file:///var/www/gamateam1/public/images/fb3.png" class="img-responsive" alt="Responsive image"></a>
+
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-md-6">
+					<span class="glyphicon glyphicon-earphone white" aria-hidden="true"></span>
+					<span> </span>
+					<span>0800-888-123</span>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-md-12">
+
+				  <p>AprovaEnem ® 2016</p>
+				</div>
+			  </div>
+			</div>
+	  </div>
 
 		<!-- modais -->
 
@@ -218,30 +278,30 @@
 							<div class="col-md-4">
 								<div class="form-group">
 									<input ng-model="location" class="form-control input-cadastro" type="text" placeholder="De onde você é?">
-								</div>								
+								</div>
 							</div>
 						</div>
-						<button ng-click="lead()" class="btn btn-success">Cadastre-se!</button>
+						<button ng-click="lead()" class="btn btn-primary">Cadastre-se!</button>
 					</form>
 			  </div>
 			</div>
 		  </div>
 		</div>
 
-		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="file:///var/www/gamateam1/bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="file:///var/www/gamateam1/bower_components/angular/angular.min.js"></script>
 
-		<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="file:///var/www/gamateam1/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
-		<script type="text/javascript" src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
-		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="file:///var/www/gamateam1/bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+		<script type="text/javascript" src="file:///var/www/gamateam1/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
-		<script type="text/javascript" src="bower_components/angulartics/dist/angulartics.min.js"></script>
-		<script type="text/javascript" src="bower_components/angulartics-google-analytics/dist/angulartics-google-analytics.min.js"></script>
+		<script type="text/javascript" src="file:///var/www/gamateam1/bower_components/angulartics/dist/angulartics.min.js"></script>
+		<script type="text/javascript" src="file:///var/www/gamateam1/bower_components/angulartics-google-analytics/dist/angulartics-google-analytics.min.js"></script>
 
-		<script type="text/javascript" src="public/js/main.js"></script>
-		
+		<script type="text/javascript" src="file:///var/www/gamateam1/public/js/main.js"></script>
+
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
