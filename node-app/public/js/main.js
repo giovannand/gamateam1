@@ -23,7 +23,9 @@ app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
 	$scope.lead = function () {
 		$http.post('/api/users/new', $scope.userData).success(function(data){
 			$('#cadastro').modal('hide');
-			$('#successModal').modal('show');
+			if ($scope.userData.email != "") {
+				$('#successModal').modal('show');
+			}
 		}).error(function(data){});
 	}
 }]);
