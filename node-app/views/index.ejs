@@ -128,7 +128,7 @@
 		  </a>
 		</div>
 		<!-- ------------------ /.carousel -->
-		<div class="row" style="margin-bottom: 10px"><div class="col-md-12"><div class="text-center"> <h3>Faltam <strong>103</strong> pro ENEM.</h3></div></div></div>
+		<div class="row" style="margin-bottom: 10px"><div class="col-md-12"><div class="text-center"> <h3>Faltam <strong><timer end-time="1478304000000">{{days}}</timer> dias</strong> pro ENEM.</h3></div></div></div>
 		<div ui-view>
 
 		</div>
@@ -214,10 +214,15 @@
 		<script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="angular/angular.min.js"></script>
 
+		<script type="text/javascript" src="moment/min/moment.min.js"></script>
+		<script type="text/javascript" src="moment/min/locales.min.js"></script>
+		<script type="text/javascript" src="humanize-duration/humanize-duration.js"></script>
+
 		<script type="text/javascript" src="angular-ui-router/release/angular-ui-router.min.js"></script>
 		<script type="text/javascript" src="angular-sanitize/angular-sanitize.min.js"></script>
 
 		<script type="text/javascript" src="angular-loading-bar/build/loading-bar.min.js"></script>
+		<script type="text/javascript" src="angular-timer/dist/angular-timer.min.js"></script>
 		<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
 
 
