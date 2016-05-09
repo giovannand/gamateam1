@@ -7,5 +7,5 @@
 
 	$jsonFile[$email] = array('email' => $email, 'age' => $age, 'location' => $location);
 
-	file_put_contents('leads.json', $jsonFile);
+	file_put_contents('leads.json', json_encode($jsonFile));
 ?>

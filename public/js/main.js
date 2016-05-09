@@ -1,4 +1,4 @@
-var app = angular.module('aprovaapp', ['ui-router', 'angular-loading-bar', 'angulartics', 'angulartics.google.analytics']);
+var app = angular.module('aprovaapp', ['ui.router', 'angular-loading-bar', 'angulartics', 'angulartics.google.analytics']);
 
 app.controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
 	$scope.lead = function () {
