@@ -2,6 +2,10 @@ Instala node e npm, segue os tutoriais no site do node que nos package manager Ã
 
 $ sudo npm install -g bower
 
+$ npm install
+
 $ bower install
 
-Depois Ã© so rodar seu apache
+$ node app.js
+
+(Na pasta node-app)
