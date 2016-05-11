@@ -9,7 +9,15 @@
 
 				  <div ng-bind-html="post.body"></div>
 				</div>
-
+				<form class="navbar-form navbar-center">
+					<div class="form-group">
+						<a class="navbar-brand" href="#">Quer saber mais? Cadastre-se e concorra à <b>Biblía do ENEM!</b></a>
+					</div>
+					<div class="form-group">
+						<input ng-model="userData.email" class="form-control" type="text" placeholder="Email">
+						<a class="button" ng-click="lead()" href="#"><span class="glyphicon glyphicon-envelope " ></span></a>
+					</div>
+				</form>
 				<!-- <div class="artigo texto short-div">
 					<a class="navbar-brand" ui-sref="post(postUrl: post.next)">Anterior</a>
 					<a class="navbar-brand" ui-sref="post(postUrl: post.prev)">Próxima</a>

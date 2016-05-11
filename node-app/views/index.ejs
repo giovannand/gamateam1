@@ -82,7 +82,7 @@
 						<div class="carousel-caption">
 							<h1>Seja Aprovado!</h1>
 							<p>Você está querendo ser aprovado no ENEM e procura pelas <b>melhores dicas</b> sobre o tema na internet? Nós podemos te ajudar!</p>
-							<p><a class="btn btn-lg btn-primary" href="artigo1.html" role="button">Saiba mais</a></p>
+							<p><a class="btn btn-lg btn-primary" ui-sref="post({postUrl: 'saiba-como-ser-aprovado-no-enem'})" role="button">Saiba mais</a></p>
 						</div>
 					</div>
 				</div>
@@ -92,7 +92,7 @@
 						<div class="carousel-caption">
 							<h1>Aprenda matemática!</h1>
 							<p>Conheça os 3 melhores professores de matemática do Youtube</p>
-							<p><a class="btn btn-lg btn-primary" href="artigo2.html" role="button">Saiba mais</a></p>
+							<p><a class="btn btn-lg btn-primary" ui-sref="post({postUrl: 'os-3-melhores-professores-de-matematica-do-youtube'})"  role="button">Saiba mais</a></p>
 						</div>
 					</div>
 				</div>
@@ -102,10 +102,10 @@
 						<div class="carousel-caption">
 							<h1>Chegue na hora!</h1>
 							<p>5 dicas para não chegar atrasado no dia do ENEM!</p>
-							<p><a class="btn btn-lg btn-primary" href="artigo3.html" role="button">Saiba mais</a></p>
+							<p><a class="btn btn-lg btn-primary" ui-sref="post({postUrl: '5-dicas-para-nao-chegar-atrasado-no-dia-do-enem'})" role="button">Saiba mais</a></p>
 						</div>
 					</div>
-				</div> 
+				</div>
 			</div>
 			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -166,6 +166,13 @@
 						<div class="row">
 							<div class="col-md-8 col-md-offset-2">
 								<div class="form-group">
+									<p>Participe do Sorteio da <b>Biblía do ENEM!</b><br/>Preencha as informações abaixo:</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="form-group">
 									<input ng-model="userData.email" class="form-control" type="text" placeholder="Email">
 								</div>
 							</div>
@@ -182,7 +189,15 @@
 								</div>
 							</div>
 						</div>
-						<button ng-click="lead()" class="btn btn-primary">Cadastre-se!</button>
+
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="form-group">
+									<button ng-click="lead()" class="btn btn-primary">Cadastre-se!</button>
+									<p><br/>O sorteio será no dia 15/05 às 15h na página do facebook, não perca!</p>
+								</div>
+							</div>
+						</div>
 					</form>
 			  </div>
 			</div>
