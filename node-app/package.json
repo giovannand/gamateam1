@@ -8,6 +8,7 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "ejs": "^2.4.1",
+    "exec": "^0.2.1",
     "express": "^4.13.4",
     "friendly-url": "^1.0.3",
     "glob": "^7.0.3",
